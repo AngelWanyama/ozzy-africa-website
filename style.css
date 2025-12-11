@@ -1,6 +1,6 @@
-/* --------------------------------------------------------
+/* --------------------------------------------------------------
    GLOBAL RESET
---------------------------------------------------------- */
+-------------------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -9,17 +9,36 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #fff;
   color: #222;
+  background: #ffffff;
   line-height: 1.6;
 }
 
-/* --------------------------------------------------------
+/* --------------------------------------------------------------
+   LAYOUT UTILITIES
+-------------------------------------------------------------- */
+section {
+  padding: 70px 0;
+}
+
+.bg-light {
+  background: #f7f7f7 !important;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------
    NAVIGATION
---------------------------------------------------------- */
+-------------------------------------------------------------- */
+.navbar {
+  border-bottom: 1px solid #eaeaea;
+}
+
 .nav-link {
   font-size: 0.95rem;
-  padding: 10px 12px;
+  padding: 10px 15px;
 }
 
 .nav-link:hover {
@@ -27,103 +46,127 @@ body {
 }
 
 .dropdown-menu {
-  border-radius: 0;
   border: none;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
 }
 
-.dropdown-item {
-  padding: 10px 15px;
-}
-
-.dropdown-item:hover {
-  background: #f5f5f5;
-}
-
-/* --------------------------------------------------------
-   HERO SECTION
---------------------------------------------------------- */
-
+/* --------------------------------------------------------------
+   HERO SECTIONS
+-------------------------------------------------------------- */
 .hero-section {
-  position: relative;
-  height: 75vh;
-  overflow: hidden;
+  background: #fff;
+  padding: 90px 0 50px;
   border-bottom: 1px solid #eee;
 }
 
-.hero-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(70%);
+.sub-hero {
+  background: #f5f5f5;
+  padding: 120px 0 60px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.2);
+.sub-hero h1 {
+  font-size: 2.4rem;
 }
 
-.hero-content {
-  position: absolute;
-  bottom: 18%;
-  left: 5%;
-  max-width: 650px;
-  color: #fff;
+.sub-hero p {
+  color: #555;
 }
 
-.hero-content h1 {
-  font-weight: 700;
+/* --------------------------------------------------------------
+   CARDS (MISSION, VISION, GOALS)
+-------------------------------------------------------------- */
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: 0.25s ease;
+  background: #fff;
 }
 
-.hero-content p {
-  font-size: 1.15rem;
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-/* --------------------------------------------------------
+/* --------------------------------------------------------------
    SDG BOXES
---------------------------------------------------------- */
+-------------------------------------------------------------- */
 .sdg-box {
+  padding: 20px;
   background: #fff;
   border-radius: 8px;
+  text-align: center;
   font-weight: 600;
   transition: 0.25s ease;
 }
 
 .sdg-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.1);
 }
 
-/* --------------------------------------------------------
-   PROGRAM CARDS
---------------------------------------------------------- */
-
-.program-card {
-  background: #fff;
-  border-radius: 10px;
+/* --------------------------------------------------------------
+   GALLERY IMAGES
+-------------------------------------------------------------- */
+.gallery-img,
+.img-fluid.rounded {
+  border-radius: 12px;
   transition: 0.3s ease;
 }
 
-.program-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+.gallery-img:hover,
+.img-fluid.rounded:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
 
-.program-img {
-  width: 100%;
-  height: 190px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* --------------------------------------------------------
-   IMPACT CARDS
---------------------------------------------------------- */
-.impact-box {
+/* --------------------------------------------------------------
+   FOUNDER CARD
+-------------------------------------------------------------- */
+.founder-card {
+  border-radius: 12px;
   background: #fff;
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.founder-card img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* --------------------------------------------------------------
+   PROGRAM CARDS AND PRODUCT CARDS
+-------------------------------------------------------------- */
+.program-card,
+.product-card {
+  border-radius: 12px;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.program-card:hover,
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.15);
+}
+
+.program-card img,
+.product-card img {
   border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* --------------------------------------------------------------
+   IMPACT BOXES
+-------------------------------------------------------------- */
+.impact-box {
+  padding: 25px;
+  border-radius: 12px;
+  background: #ffffff;
   transition: 0.3s ease;
 }
 
@@ -133,83 +176,82 @@ body {
 }
 
 .impact-box h1 {
-  font-size: 2.4rem;
-  margin-bottom: 5px;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
 
-/* --------------------------------------------------------
-   TEAM CARDS
---------------------------------------------------------- */
-.team-card img {
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  object-fit: cover;
-  margin-bottom: 12px;
-}
-
-/* --------------------------------------------------------
-   PRODUCT CARDS (PURCHASE PAGE)
---------------------------------------------------------- */
-.product-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.price {
-  font-weight: bold;
-  margin-top: 5px;
-}
-
-/* --------------------------------------------------------
-   APPLY FORM
---------------------------------------------------------- */
+/* --------------------------------------------------------------
+   FORM STYLES (APPLY PAGE)
+-------------------------------------------------------------- */
 .apply-form input,
-.apply-form textarea,
-.apply-form select {
-  border-radius: 6px;
-  padding: 10px;
-  border: 1px solid #ddd;
+.apply-form select,
+.apply-form textarea {
   width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
 }
 
 .apply-form input:focus,
-.apply-form textarea:focus,
-.apply-form select:focus {
-  outline: none;
+.apply-form select:focus,
+.apply-form textarea:focus {
   border-color: #000;
+  outline: none;
 }
 
-/* --------------------------------------------------------
+/* --------------------------------------------------------------
    FOOTER
---------------------------------------------------------- */
+-------------------------------------------------------------- */
 footer {
-  font-size: 0.9rem;
+  background: #111;
+  color: #fff;
+  padding: 35px 0;
 }
 
-/* --------------------------------------------------------
-   GENERAL UTILITY
---------------------------------------------------------- */
-section {
-  scroll-margin-top: 90px;
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
 
-button,
-.btn {
-  border-radius: 8px !important;
+footer a:hover {
+  opacity: 0.7;
 }
-/* --------------------------------------------------------
-   FADE-IN ANIMATION EFFECTS
---------------------------------------------------------- */
+
+/* --------------------------------------------------------------
+   SOCIAL MEDIA ICONS
+-------------------------------------------------------------- */
+footer .fs-4 {
+  transition: 0.3s ease;
+}
+
+footer .fs-4:hover {
+  transform: scale(1.15);
+}
+
+/* --------------------------------------------------------------
+   ANIMATIONS: FADE-IN ON SCROLL
+-------------------------------------------------------------- */
 .hidden {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(15px);
   transition: all 0.7s ease;
 }
 
 .show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* --------------------------------------------------------------
+   RESPONSIVE TWEAKS
+-------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .sub-hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero-section {
+    padding-top: 110px;
+  }
 }
