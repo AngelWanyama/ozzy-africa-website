@@ -1,214 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Ozzy Africa Technologies</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <title>About Us - Ozzy Africa Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="Ozzylogo.png.png" height="50">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/Ozzylogo.png" height="45" alt="" />
+    </a>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Who We Are</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item active" href="about.html">About Us</a></li>
-                        <li><a class="dropdown-item" href="our-story.html">Our Story</a></li>
-                        <li><a class="dropdown-item" href="team.html">Our Team</a></li>
-                    </ul>
-                </li>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">What We Do</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="strategic-domain.html">Strategic Domains</a></li>
-                        <li><a class="dropdown-item" href="programs.html">Programs</a></li>
-                        <li><a class="dropdown-item" href="impact.html">Impact</a></li>
-                        <li><a class="dropdown-item" href="driving-change.html">Driving Change</a></li>
-                    </ul>
-                </li>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Get Involved</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="events.html">Events</a></li>
-                        <li><a class="dropdown-item" href="donate.html">Donate</a></li>
-                        <li><a class="dropdown-item" href="purchase.html">Purchase</a></li>
-                    </ul>
-                </li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 
-                <li class="nav-item"><a class="nav-link" href="apply.html">Apply</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">What We Do</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="strategic-domain.html">Strategic Domain</a></li>
+            <li><a class="dropdown-item" href="projects.html">Projects & Programs</a></li>
+            <li><a class="dropdown-item" href="impact.html">Impact</a></li>
+            <li><a class="dropdown-item" href="driving-change.html">Driving Change</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Who We Are</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+            <li><a class="dropdown-item" href="our-story.html">Our Story</a></li>
+            <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+            <li><a class="dropdown-item" href="reports.html">Annual Report</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Get Involved</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="events.html">Events</a></li>
+            <li><a class="dropdown-item" href="donate.html">Donate</a></li>
+            <li><a class="dropdown-item" href="purchase.html">Purchase</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="apply.html">Apply</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+      </ul>
     </div>
+  </div>
 </nav>
 
-<!-- HERO -->
-<section class="hero-section text-center" style="margin-top:90px;">
-    <div class="container py-5">
-        <h1 class="fw-bold display-5">About Ozzy Africa Technologies</h1>
-        <p class="text-muted mt-3">Advancing digital and green skills for young people across Uganda</p>
-    </div>
-</section>
 
-<!-- WHO WE ARE -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-4">
-                <img src="ozzyteam.jpg.jpeg" class="img-fluid rounded shadow">
-            </div>
+<!-- ABOUT HERO -->
+<header class="about-hero">
+  <div class="overlay"></div>
+  <div class="hero-content container">
+    <h1 class="fw-bold">About Us</h1>
+    <p class="lead mt-3">
+      Building a GreenTech future for young people in Uganda.
+    </p>
+  </div>
+</header>
 
-            <div class="col-lg-6">
-                <h2 class="fw-bold">Who We Are</h2>
-                <p class="mt-3">
-                    Ozzy Africa Technologies is a registered social enterprise based in Mbale City, Uganda.
-                    We strengthen digital and technical skills, expand access to quality training, and promote sustainable e-waste solutions through hands-on repair and innovation.
-                </p>
 
-                <ul class="list-group mt-3">
-                    <li class="list-group-item">Registered in Uganda in 2024</li>
-                    <li class="list-group-item">Headquarters in Mbale City</li>
-                    <li class="list-group-item">Focus areas include digital training, electronic repair, e-waste recovery, and green innovation</li>
-                    <li class="list-group-item">We support young people, especially young women, aged 15 to 30</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- FOUNDER MESSAGE -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center fw-bold mb-4">Founder’s Message</h2>
-<img src="images/angelwanyama.jpg" alt="Angel Wanyama" />
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="card border-0 shadow-lg p-4">
-                    <div class="text-center mb-3">
-                        <img src="angelwanyama.jpg.png" class="rounded-circle shadow" width="150" height="150">
-                    </div>
-
-                    <p class="text-center">
-                        Ozzy Africa began as a simple idea shaped by lived experience, curiosity, and the belief that young Africans deserve access to the digital world and the opportunities that come with it. 
-                    </p>
-
-                    <p class="text-center">
-                        Many young people are left out of the digital economy because they lack access to training, mentorship, and tools. At the same time, e-waste continues to grow in our communities, creating risks but also opportunities for innovation and green skills.
-                    </p>
-
-                    <p class="text-center">
-                        Our work brings these two realities together. We train, repair, recover, and innovate so young people can build better futures while contributing to a cleaner environment.
-                    </p>
-
-                    <p class="fw-bold text-center mt-3">Angel Wanyama  
-                        <br>Founder and Executive Director  
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- MISSION VISION GOALS -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center fw-bold mb-4">Our Mission, Vision, and Goals</h2>
-
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card shadow h-100 p-3 text-center">
-                    <h4 class="fw-bold">Mission</h4>
-                    <p>To expand digital and repair skills for young people and reduce e-waste through training, repair, and innovation.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card shadow h-100 p-3 text-center">
-                    <h4 class="fw-bold">Vision</h4>
-                    <p>A future where young people in Uganda thrive in the digital and green economy.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card shadow h-100 p-3 text-center">
-                    <h4 class="fw-bold">Goals</h4>
-                    <p>To strengthen skills, expand access to technology, create jobs, and promote sustainability.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- GALLERY -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <h2 class="fw-bold text-center mb-4">Our Work in Pictures</h2>
-
-        <div class="row g-4">
-
-            <!-- ICT and Digital Skills -->
-            <div class="col-md-4"><img src="images/basicict.jpg" class="img-fluid rounded shadow gallery-img"></div>
-            <div class="col-md-4"><img src="images/computerlab.jpg" class="img-fluid rounded shadow gallery-img"></div>
-
-            <!-- Repair and E waste Training -->
-            <div class="col-md-4"><img src="images/repair2.jpg" class="img-fluid rounded shadow gallery-img"></div>
-            <div class="col-md-4"><img src="images/repair3.jpg" class="img-fluid rounded shadow gallery-img"></div>
-            <div class="col-md-4"><img src="images/Repairclass.jpg" class="img-fluid rounded shadow gallery-img"></div>
-
-            <!-- Photography and Creative Skills -->
-            <div class="col-md-4"><img src="images/photography.jpg" class="img-fluid rounded shadow gallery-img"></div>
-
-            <!-- Solar training and energy work -->
-            <div class="col-md-4"><img src="images/solar.jpg" class="img-fluid rounded shadow gallery-img"></div>
-
-            <!-- Problem and community context images -->
-            <div class="col-md-4"><img src="images/problem.jpg" class="img-fluid rounded shadow gallery-img"></div>
-            <div class="col-md-4"><img src="images/Problemwaste.jpg" class="img-fluid rounded shadow gallery-img"></div>
-
-            <!-- Team and people images -->
-            <div class="col-md-4"><img src="images/ozzyteam.jpg" class="img-fluid rounded shadow gallery-img"></div>
-
-            <!-- Young people learning -->
-            <div class="col-md-4"><img src="images/Videography.jpg" class="img-fluid rounded shadow gallery-img"></div>
-
-        </div>
-    </div>
-</section>
-
-    <!-- PROBLEM WE ARE SOLVING SECTION -->
+<!-- WHO WE ARE SECTION -->
 <section class="py-5">
   <div class="container">
-    <h2 class="fw-bold text-center mb-4">The Problem We Are Solving</h2>
-    <p class="text-center mb-5">
-      Uganda faces three linked challenges. Electronic waste, low digital access, and unemployment.
-      Our work connects these challenges to create practical solutions for young people.
-    </p>
+    <div class="row align-items-center">
 
-    <div class="row g-4">
-
-      <div class="col-md-6">
-        <img src="images/problem.jpg" class="img-fluid rounded shadow" alt="E-waste Problem">
+      <!-- Image left -->
+      <div class="col-md-5 mb-4">
+        <img src="images/hero2.jpg" class="img-fluid rounded shadow-lg" alt="Ozzy Africa Hub">
       </div>
 
-      <div class="col-md-6">
-        <img src="images/Problemwaste.jpg" class="img-fluid rounded shadow" alt="Waste Dumping Issue">
+      <!-- Text right -->
+      <div class="col-md-7">
+        <h2 class="fw-bold mb-3">Who We Are</h2>
+        <p>
+          Ozzy Africa Technologies is a GreenTech and Circular Innovation enterprise registered in Uganda.
+          We equip young people with practical digital and green economy skills while reducing electronic waste.
+        </p>
+        <p>
+          Our work bridges three national challenges. Digital exclusion, electronic waste, and unemployment.
+          We run a solar-powered GreenTech Hub in Mbale City, Uganda, where young people gain hands-on skills,
+          access refurbished technology, and connect to real employment opportunities.
+        </p>
       </div>
 
     </div>
@@ -216,40 +109,58 @@
 </section>
 
 
-<!-- SDGs -->
-<section class="py-5">
-    <div class="container text-center">
-        <h2 class="fw-bold mb-4">SDGs We Contribute To</h2>
+<!-- PROBLEM WE ARE SOLVING -->
+<section class="py-5 bg-light">
+  <div class="container">
 
-        <div class="row g-3 justify-content-center">
-            <div class="col-md-3"><div class="sdg-box shadow">SDG 4 Quality Education</div></div>
-            <div class="col-md-3"><div class="sdg-box shadow">SDG 8 Decent Work and Economic Growth</div></div>
-            <div class="col-md-3"><div class="sdg-box shadow">SDG 12 Responsible Consumption and Production</div></div>
-            <div class="col-md-3"><div class="sdg-box shadow">SDG 13 Climate Action</div></div>
-        </div>
+    <h2 class="fw-bold text-center mb-4">The Problem We Are Solving</h2>
+    <p class="text-center mb-4">
+      Uganda faces high levels of unemployment, limited digital access, and rising e-waste pollution.
+      These challenges are connected. Our approach solves them together.
+    </p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <img src="images/community.jpg" class="img-fluid rounded shadow" alt="Community Engagement">
+      </div>
     </div>
+
+  </div>
 </section>
+
+
+<!-- FOUNDER MESSAGE -->
+<section class="py-5">
+  <div class="container">
+
+    <h2 class="fw-bold text-center mb-4">Founder’s Message</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="founder-card text-center">
+          <img src="images/angelwanyama.jpg" width="140" height="140" alt="Founder">
+
+          <h4 class="fw-bold mt-3">Angel Wanyama</h4>
+          <p class="mt-3">
+            Ozzy Africa exists to turn waste into opportunity. We create dignified pathways for young people,
+            especially women, to gain practical skills, earn income, and contribute to a greener Uganda.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- FOOTER -->
 <footer class="py-4 bg-dark text-white text-center">
-    <p>© 2025 Ozzy Africa Technologies</p>
-
-    <div class="mt-3">
-        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-linkedin"></i></a>
-        <a href="#" class="text-white me-3 fs-4"><i class="bi bi-tiktok"></i></a>
-        <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
-    </div>
-
-    <p class="mt-3">Mbale City, Uganda</p>
+  <p>© <span id="year"></span> Ozzy Africa Technologies</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<div id="footer-placeholder"></div>
-<script src="footer-loader.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
-
-
-
-
