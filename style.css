@@ -471,6 +471,39 @@ footer .fs-4:hover {
   font-size: 1.25rem;
   max-width: 700px;
 }
+/* --------------------------------------------------------------
+   APPROACH PAGE CARDS
+-------------------------------------------------------------- */
+.approach-card {
+  border-radius: 12px;
+  padding: 25px;
+  background: #fff;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.approach-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.approach-img {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+<header class="approach-hero">
+  <div class="overlay"></div>
+  <div class="hero-content container">
+    <h1 class="fw-bold">Our Approach</h1>
+    <p class="lead mt-3">
+      A circular model connecting e-waste recovery, digital skills and pathways to employment.
+    </p>
+  </div>
+</header>
+
 
 
 
