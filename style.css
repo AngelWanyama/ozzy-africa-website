@@ -435,6 +435,43 @@ footer .fs-4:hover {
   max-width: 700px;
 }
 
+/* --------------------------------------------------------------
+   OUR APPROACH HERO
+-------------------------------------------------------------- */
+.approach-hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background: url("images/hero2.jpg") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.approach-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+}
+
+.approach-hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.approach-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.approach-hero p {
+  font-size: 1.25rem;
+  max-width: 700px;
+}
+
 
 
 
