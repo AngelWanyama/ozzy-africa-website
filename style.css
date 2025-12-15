@@ -60,7 +60,7 @@ h1, h2, h3, h4 {
   height: 90vh;
   background-image: url("images/hero2.jpg.png");
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -405,7 +405,7 @@ footer .fs-4:hover {
   position: relative;
   width: 100%;
   height: 60vh;
-  background: url("images/hero2.jpg") center center/cover no-repeat;
+  background: url("images/wastecollection.jpg") center center/cover no-repeat;
   display: flex;
   align-items: center;
   color: #fff;
@@ -442,7 +442,7 @@ footer .fs-4:hover {
   position: relative;
   width: 100%;
   height: 60vh;
-  background: url("images/hero2.jpg") center center/cover no-repeat;
+  background: url("images/wastecollection.jpg") center center/cover no-repeat;
   display: flex;
   align-items: center;
   color: #fff;
@@ -503,6 +503,7 @@ footer .fs-4:hover {
     </p>
   </div>
 </header>
+
 
 
 
