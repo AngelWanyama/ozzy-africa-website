@@ -503,6 +503,10 @@ footer .fs-4:hover {
     </p>
   </div>
 </header>
+section h2 {
+  letter-spacing: -0.5px;
+}
+
 
 
 
